@@ -1,9 +1,8 @@
-
 Just Blog
 ----------
 jekyll 静态博客模板
 
-**系统设置**
+####系统设置####
 
 代码高亮
 
@@ -26,6 +25,10 @@ jekyll 静态博客模板
 分页
 
     paginate_path: "page:num"
+
+CNAME文件
+
+设置二级域名或顶级域名
 
 
 
