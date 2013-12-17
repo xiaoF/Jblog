@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="header-post-thumb light-pink">
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.author }}</h3>
+</div>
+
+
+<div id="blog" class="page">
+    <div class="container">
+        <div class="row">
+            <div  class="span12">
+                    <div class="clear"></div>
+                <h2> {{ page.month }}   {{ page.day }}   {{ page.year }}</h2>
+               <h6 style="text-align:right;">
+                          {{ page.tag }}
+                </h6>
+                        <p>{{ content }}</p>
+            </div>
+        </div>
+ 
+          <div id="ds-thread" class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+
+    </div>
+    </div>

@@ -1,0 +1,35 @@
+                <div class="row">
+                <div id='post-info' class="span1">
+                <div class="post-date">
+                     <span class="month">{{ post.month }}</span><span class="day">{{ post.day }}</span><span class="year">{{ post.year }}</span>
+                </div>
+                <div style="font-size: 9px;" class="post-user">
+                    <a style= "cursor:default ">{{ post.author }}</a>
+                    <br>
+                </div>
+                <div style="font-size: 9px;" class="post-category">
+                          <a style= "cursor:default ">{{ post.tag }} </a>
+                </div>
+                 <div style="font-size: 9px;" class="post-message">
+                    <a href="{{ post.url }}#ds-thread"><span class="font-icon-comments"></span> <span class="ds-thread-count" data-thread-key="{{ post.id }}" data-count-type="comments"></span></a>
+                </div>
+            </div>
+            	<div class="span11">
+                <div class="info-block">
+                    <h3 class="spec">  <a target="_blank" href="{{ post.url }}" > {{ post.title }}</a></h3>
+                    <p id="mobile-post-info"> <span>{{ post.month }}&nbsp;</span><span>{{ post.day }}&nbsp;</span><span >{{ post.year }}</span>&nbsp;&nbsp;<a>{{ post.author }}</a>&nbsp;&nbsp;&nbsp;
+                          <a >{{ post.tag }} </a>
+                        &nbsp;&nbsp;&nbsp;<a href="#"><span class="font-icon-comments"></span><span class="ds-thread-count" data-thread-key="{{ post.id }}" data-count-type="comments"></span></a></p>
+                    <div class="info-text">
+                        <p>
+                            {{ post.excerpt }}</p>
+                        <a class="button" target="_blank" href="{{ post.url }}" class="btn btn-1">More</a>
+                    </div>
+                </div>
+            </div>
+                  </div>
+            <div class="row">
+            <div class="span12">
+                <hr>
+            </div>
+        </div>

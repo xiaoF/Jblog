@@ -1,0 +1,30 @@
+---
+layout: default
+title: 小傅|那些事
+---
+<div class="header-post-thumb light-pink">
+  <h2>那些事</h2>
+</div>
+
+<div id="blog" class="page">
+  <div class="container">
+    {% for post in paginator.posts %}
+    {% include blogs_item.html %}
+    {% endfor %}
+    <div id="page">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+      <a href="{{ paginator.previous_page_path }}" class="button button-small">LAST</a>
+      {% else %}
+      <a href="{{ paginator.previous_page_path }}" class="button button-small">LAST</a>
+      {% endif %}
+    {% else %}
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="button button-small pull-right">NEXT</a>
+      {% else %}
+    {% endif %}
+    </div>
+
+  </div>
+</div>
