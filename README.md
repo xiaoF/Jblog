@@ -1,31 +1,57 @@
-jekyllcn
-========
 
-[http://jekyllcn.com](http://jekyllcn.com)
+Just Blog
+----------
+jekyll 静态博客模板
 
-jekyllcn 是 [http://jekyllrb.com](http://jekyllrb.com) 的中文翻译网站
+**系统设置**
 
-## 认领方法
+代码高亮
 
-1. 在想要认领的文档 ( /docs/xxx.md ) 的头信息中添加`contributor: xxx`
-2. 提交一个 pull request
-3. 等待 pull request 被 merge 即可开始翻译
-4. 翻译前请阅读[翻译规则](https://github.com/jekyllcn/jekyllcn.github.io/wiki/%E7%BF%BB%E8%AF%91%E8%A7%84%E5%88%99)（并帮我们完善它！）
+    pygments: true
 
-## TODO list:
+每页显示数目
 
-* 加入校验
+    paginate: 5
 
-## DONE
+    relative_permalinks: false
 
-* 加入作者机制，在文档前显示作者
-* 加入原文链接
-* 完善 README.md ，包括规范
-* 改用了 jekyllrb.com 的源码
-* 加入认领机制，避免重复劳动
-* doc 尾部的上一页下一页导航
-* 代码高亮
+生成的文件夹格式
+
+    permalink: /:year/:month/:day/:title/
+
+如博文太长在markdown 文档加入以下字符便可控制列表概述显示内容
+
+    excerpt_separator: <!--more--> 
+
+分页
+
+    paginate_path: "page:num"
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jekyllcn/jekyllcn.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+单篇博文模板
+----------
+####注意":" 后面紧跟着一个空格####
+
+####以下模版头属性必填可扩展####
+
+
+    ---
+    layout: blogs_item
+    title: "标题"
+    author: 作者
+    categories: 分类
+    day: 日
+    month: 月
+    year: 年
+    ---
+    
+    正文第一段（并且在博文列表显示概要）
+    
+    <!--more--> 
+    
+    正文第二段（只在详细中可见，概要不可见）
+
+
+
+未完待续...
