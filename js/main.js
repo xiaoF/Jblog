@@ -2,13 +2,13 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?8701375826723deeac8ae97575bb13f2";
+  hm.src = "//hm.baidu.com/hm.js?---【your ID】----";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 
 //多说
-var duoshuoQuery = {short_name:"fatcoders"};
+var duoshuoQuery = {short_name:"---【your ID】----"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
