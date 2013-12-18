@@ -74,8 +74,6 @@ CNAME文件
 是用什么格式写的。下面是一些合法的文件名的例子：
 `
 2011-12-31-new-years-eve-is-awesome.md
-
-2012-09-12-how-to-write-a-blog.textile
 `
 
 
