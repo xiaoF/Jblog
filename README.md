@@ -57,7 +57,7 @@ CNAME文件
 
 ## 文章文件夹
 
-在[目录结构](../structure/)介绍中说明过，所有的文章都在`_posts`文件夹中。
+所有的文章都在`_posts`文件夹中。
 这些文件可以用[Markdown](http://daringfireball.net/projects/markdown/) 编写，
 也可以用[Textile](http://textile.sitemonks.com/) 格式编写。只要文件中有
 [YAML头信息](../frontmatter/)，它们就会从源格式转化成 HTML 页面，从而成为
@@ -67,15 +67,16 @@ CNAME文件
 
 发表一篇新文章，你所需要做的就是在`_posts`文件夹中创建一个新的文件。
 文件名的命名非常重要。Jekyll 要求一篇文章的文件名遵循下面的格式：
-{% highlight bash %}
+`
 年-月-日-标题.MARKUP
-{% endhighlight %} 
+`
 在这里，`年`是4位数字，`月`和`日`都是2位数字。`MARKUP`扩展名代表了这篇文章
 是用什么格式写的。下面是一些合法的文件名的例子：
-{% highlight bash %}
+`
 2011-12-31-new-years-eve-is-awesome.md
 2012-09-12-how-to-write-a-blog.textile
-{% endhighlight %}
+`
+
 
 
 ### 内容格式
@@ -99,16 +100,16 @@ CNAME文件
 
 在文章中引用一个图片
 
-{% highlight text %}
+`
 … 从下面的截图可以看到：
 ![有帮助的截图]({% raw %}{{ site.url }}{% endraw %}/assets/screenshot.jpg)
-{% endhighlight %}
+`
 
 链接一个读者可下载的 PDF 文件：
 
-{% highlight text %}
+`
 … 你可以直接 [下载 PDF]({% raw %}{{ site.url }}{% endraw %}/assets/mydoc.pdf).
-{% endhighlight %}
+`
 
 <div class="note">
   <h5>提示™: 链接只使用站点的根URL</h5>
