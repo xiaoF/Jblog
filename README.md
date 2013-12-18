@@ -102,20 +102,20 @@ CNAME文件
 
 `
 … 从下面的截图可以看到：
-![有帮助的截图]({% raw %}{{ site.url }}{% endraw %}/assets/screenshot.jpg)
+![有帮助的截图]({{ site.url }}/assets/screenshot.jpg)
 `
 
 链接一个读者可下载的 PDF 文件：
 
 `
-… 你可以直接 [下载 PDF]({% raw %}{{ site.url }}{% endraw %}/assets/mydoc.pdf).
+… 你可以直接 [下载 PDF]({{ site.url }}/assets/mydoc.pdf).
 `
 
 <div class="note">
   <h5>提示™: 链接只使用站点的根URL</h5>
   <p>
     如果你<strong>确信</strong>你的站点只在域名的根 URL 下做展示，你可以不使用
-     <code>{% raw %}{{ site.url }}{% endraw %}</code>变量。在这种情况下，
+     <code>{{ site.url }}</code>变量。在这种情况下，
      直接使用<code>/path/file.jpg</code>即可。
   </p>
 </div>
