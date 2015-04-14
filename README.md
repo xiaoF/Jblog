@@ -2,6 +2,8 @@ Just Blog
 ----------
 jekyll 静态博客模板
 
+[点击查看Demo](http://fatcoder.com/)
+
 ####系统设置####
 
 代码高亮
